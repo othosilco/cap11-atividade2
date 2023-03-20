@@ -1,0 +1,309 @@
+/* configurações gerais da página */
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #003f5c;
+    --color-2: #58508d;
+    --color-3: #bc5090;
+    --color-4: #ff6361;
+    --color-5: #ffa600;
+    --border-radius: 100px;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.btn {
+    background-color: var(--color-5);
+    padding: 12px 32px;
+    border-radius: var(--border-radius);
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* tipografia */
+
+h1 {
+    font-size: 8vh;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 7vh; 
+}
+
+h3 {
+    font-size: 6vh;
+}
+
+h4 {
+    font-size: 5vh;
+}
+
+h5 {
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 3vh;
+}
+
+p {
+    font-size: 3vh; 
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* sections */
+
+.header {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px 6vw;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+.header ul {
+    display: flex;
+}
+
+.header li {
+    margin: 0 16px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header h5 {
+    color: #fff;
+}
+
+.title {
+    font-style: italic;
+}
+
+.hero {
+    background-color: var(--color-1);
+    min-height: 90vh;
+    width: 100%;
+    padding: 10vh 8vw 4vh 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.hero-div {
+    min-height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    /* porque não consigo usar isso ↓ sem o display flex? */
+    align-items:flex-start; 
+    justify-content: center;
+    text-align: left;
+    color: #fff;
+}
+
+
+.hero p {
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 500px;
+}
+
+.description {
+    width: 100%;
+    height: auto;
+    padding: 12vh 6vw;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.description-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.description-div div {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 2px 8px 16px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.description-div div:hover {
+    background-color: #fff;
+    box-shadow: 2px 8px 16px 1px rgba(0, 0, 0, 0.3);
+}
+
+.description img {
+    height: 100px;
+}
+
+.destinos {
+    width: 100%;
+    height: auto;
+    padding: 12vh 0 12vh 6vw;
+    
+}
+
+.destinos-div {
+    height: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 28%;
+    gap: 24px;
+    margin-top: 24px;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    scrollbar-width: none;
+}
+
+
+.destinos-div div {
+    width: auto;
+    height: 500px;  
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-start;
+    scroll-snap-align: start;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+}
+
+.destinos-div .btn {
+    margin-top: 16px;
+}
+
+.destinos-item1 {
+    background-image: linear-gradient(rgba(0, 63, 92, 0.0), rgba(0,63,92, 1)), url(../images/destino-1-samora.jpeg);
+}
+
+.destinos-item2 {
+    background-image: linear-gradient(rgba(0, 63, 92, 0.0), rgba(0,63,92, 1)), url(../images/destino-2-yucatan.jpg);
+}
+
+.destinos-item3 {
+    background-image: linear-gradient(rgba(0, 63, 92, 0.0), rgba(0,63,92, 1)), url(../images/destino-3-tokyo.jpeg);
+}
+
+.destinos-item4 {
+    background-image: linear-gradient(rgba(0, 63, 92, 0.0), rgba(0,63,92, 1)), url(../images/destino-4-gales.jpeg);
+}
+
+.destinos-item5 {
+    background-image: linear-gradient(rgba(0, 63, 92, 0.0), rgba(0,63,92, 1)), url(../images/destino-5-turks.jpeg);
+}
+
+.destinos-item6 {
+    background-image: linear-gradient(rgba(0, 63, 92, 0.0), rgba(0,63,92, 1)), url(../images/destino-6-taiwan.jpeg);
+}
+
+.destinos-item7 {
+    background-image: linear-gradient(rgba(0, 63, 92, 0.0), rgba(0,63,92, 1)), url(../images/destino-7-serinagar.jpeg);
+}
+
+.roteiros {
+    width: 100%;
+    height: auto;
+    padding: 12vh 6vw;
+    background-color: #f2f2f2;
+}
+
+.roteiros-div {
+    width: auto;
+    display: flex;
+    margin-top: 24px;
+    gap: 24px;
+}
+
+.roteiros-div div {
+    width: 100%;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.roteiros-div img {
+    width: 100%;    
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+}
+
+.passagens {
+    width: 100%;
+    height: auto;
+    padding: 10vh 6vw;
+    color: #fff;
+}
+
+.passagens-div {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: start;
+    background-image: url(../images/pexels-stefan-stefancik-91217\(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 64px;
+    border-radius: 24px;
+}
+
+.passagens-div h5 {
+    width: 50%;
+}
+
+.sobre {
+    width: 100%;
+    padding: 10vh 6vw;
+    background-color: var(--color-2);
+    display: flex;
+    gap: 64px;
+    color: #fff;
+    align-items: center;
+}
+
+.sobre div {
+    width: 50%;
+}
+
+.sobre img {
+    width: 100%;
+    border-radius: 16px;
+}
